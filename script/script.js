@@ -175,9 +175,9 @@ function renderInterview(){
         console.log(interview);
         filterSection.className = 'space-y-6';
         let div = document.createElement('div')
-        div.className = 'card flex justify-between shadow rounded-md p-5 '
+        div.className = 'card flex justify-between shadow rounded-md p-5 hover:bg-green-200 hover:translate-1 duration-300 ease-in-out'
         div.innerHTML = `
-        <div class="card flex justify-between rounded-md p-5">
+    
             <div class="left space-y-5">
 <h2 class="text-xl font-semibold company-name">${interview.companyName}</h2>
 <p class=" text-[#64748B] job-name ">${interview.jobName}</p>
@@ -209,7 +209,7 @@ function renderRejected(){
         console.log(rejected);
         filterSection.className = 'space-y-6';
         let div = document.createElement('div')
-        div.className = 'card flex justify-between shadow rounded-md p-5 '
+        div.className = 'card flex justify-between shadow rounded-md p-5 hover:bg-red-200 hover:translate-1 duration-300 ease-in-out'
         div.innerHTML = `
         <div class="left  space-y-5">
                 <h2 class="text-xl font-semibold company-name">${rejected.companyName}</h2>
