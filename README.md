@@ -1,83 +1,24 @@
-## Welcome To ( সহজ সরল সিম্পল ) Assignment - 4 
+Answer to the question :
+1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+Answer: getElementById - with this we can get the specified id
+getElementsByClassName - we can get all elements with same class with getElementsByClassName
+querySelector - it returns the first element within the document that matches the specified CSS selector
+querySelectorAll - it returns  a static NodeList representing a list of the document's elements that match the specified group of selectors
 
 
----
-# 📅 Deadline For 60 marks: 23th February, 2026 (11:59 pm ⏱️)
-# 📅 Deadline For 50 marks: 24th February, 2026 (11:59 pm ⏱️)
-# 📅 Deadline For 30 marks: Any time after 24th February.
+2. How do you create and insert a new element into the DOM?
+Answer: if one wants to create and insert a new element into DOM using JS then he needs to create the element in memory and then use method like appendChild() to add it to an existing element in the document. 
 
 
-# Main Requirements
-
-## Design Part
-
-## Dashboard
-- Website name and Create a dashboard like figma 
-- The section should be responsive for mobile devices. It is totally up to you. 
-
-## Available Jobs Section
-- A title on the left side, jobs count on the right side 
-- 3 different tab  below the section title 
-- Minimum 8 cards with:
-	- companyName
-	- position
-	- location
-	- type
-	- salary
-	- description
-	- 2 buttons: Interview, Rejected
-- By default all the jobs data will show on All tab, and the Interview, Rejected tab will show “No jobs Available” message with a subtitle below and an icon/image on the above
-
-- The section should be responsive for mobile devices. It is totally up to you.
-
---- 
-
-## Functionalities Part
-- Clicking on Interview button on the card 
-    - will add the data on Interview tab 
-    - add the status as Interview.
-    - Will increase the the count of interview in Dashboard 
-
-- Clicking on Rejected button on the card 
-    - will add the data on Rejected tab 
-    - add the status as Rejected.
-    - Will increase the the count of Rejected in Dashboard
-
-- Enable toggle between Interview and rejected button(you can select Rejected button after clicking on Interview, and Interview button after clicking on Rejected button). It will change the tab and dashboard count also. It will show tab wise jobs count on the right.
-
----
-
-# Challenges Requirements
-- Clicking on the delete button will remove that card from the UI, and the count will be deducted from the dashboard card and the main section.
-- No lorem ipsum text on your website. At least 8 meaningful commits in your project.  
-
-- Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
+3. What is Event Bubbling? And how does it work?
+Answer:  Event bubbling is a DOM event propagation mechanism where an event triggered on a child element triggers handlers on that element first, then propagates upwards through its parent and ancestor elements to the root of the DOM. It acts like a ripple in a pond, moving from the target element up to the document.
 
 
-## Answers to Questions
-
-### 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
-
-### 2. How do you create and insert a new element into the DOM?
-
-### 3. What is Event Bubbling? And how does it work?
-
-### 4. What is Event Delegation in JavaScript? Why is it useful?
-
-### 5. What is the difference between preventDefault() and stopPropagation() methods?
-
----
+4. What is Event Delegation in JavaScript? Why is it useful?
+Answer: Event Delegation is a JS method where a single event listener is attached to a common parent element to manage events for all of its children. This is possible because of event bubbling, the process where an event triggered on a child element propagates upward through its ancestors in the DOM tree.
 
 
-**Technology Stack:**
-- HTML
-- CSS (Vanilla/Tailwind/DaisyUI)
-- JavaScript (Vanilla)
 
-
---- 
-
-## What to submit: 
-
-1. GitHub Repository Link: 
-2. Live Site Link: 
+5. What is the difference between preventDefault() and stopPropagation() methods?
+Answer: preventDefault() - it stops browser's default action for an event.
+stopPropagation() - it stops the event from propagating up or down in the DOM tree
