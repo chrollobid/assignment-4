@@ -81,7 +81,8 @@ if(event.target.classList.contains('interview-btn')){
     const description = parentNode.querySelector('.desc').innerText
     parentNode.querySelector('.status').innerText = 'Interview'
 status.classList.add('border-3', 'border-green-600', 'px-4', 'font-semibold', 'py-2', 'text-green-600' ,'rounded-md')
-    const cardInfo = {
+status.classList.remove('border-red-600', 'text-red-600');    
+const cardInfo = {
         companyName, 
         jobName,
         locationName,
@@ -111,7 +112,7 @@ else if(event.target.classList.contains('rejected-btn')){
     const description = parentNode.querySelector('.desc').innerText
     parentNode.querySelector('.status').innerText = 'Rejected'
     status.classList.add('border-3', 'border-red-600', 'px-4', 'font-semibold', 'py-2', 'text-red-600' ,'rounded-md')
-    
+    status.classList.remove('border-green-600', 'text-green-600')
     const cardInfo = {
         companyName, 
         jobName,
@@ -172,7 +173,7 @@ function renderInterview(){
 
     for(let interview of interviewList){
         console.log(interview);
-        
+        filterSection.className = 'space-y-6';
         let div = document.createElement('div')
         div.className = 'card flex justify-between shadow rounded-md p-5 '
         div.innerHTML = `
@@ -206,11 +207,11 @@ function renderRejected(){
 
     for(let rejected of rejectedList){
         console.log(rejected);
-        
+        filterSection.className = 'space-y-6';
         let div = document.createElement('div')
         div.className = 'card flex justify-between shadow rounded-md p-5 '
         div.innerHTML = `
-        <div class="left space-y-5">
+        <div class="left  space-y-5">
                 <h2 class="text-xl font-semibold company-name">${rejected.companyName}</h2>
                 <p class="text-[#64748B] job-name">${rejected.jobName}</p>
                 <p class="text-[#64748B] location">${rejected.locationName}</p>
